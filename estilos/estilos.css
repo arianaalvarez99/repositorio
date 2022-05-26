@@ -1,0 +1,154 @@
+/* TIPOS DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Oswald:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* HEADER */
+
+header{
+    background-color:rgba(44, 102, 102, 0.699);
+    padding: 30px 25px 10px 30px;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 5px 0px 15px 30px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+
+
+/* INDEX */
+
+.título{
+    font-family: 'Tiro Tamil', serif;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.subtítulo{
+    font-family: 'Tiro Tamil', serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+body{
+    background-color: mintcream;
+    
+    
+}
+main{
+    padding: 20px 80px 55px 80px;
+}
+section{
+    padding: 0px 80px 55px 80px;
+}
+
+
+.figure{ 
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+
+footer{
+    background-color: darksalmon;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+/* CONTACTO */
+
+.contacto{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    
+}
+.form{ 
+     font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* GALERIA */
+
+.galería{
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+   
+}
+.sectionContenedor{
+    display: flex;
+    justify-content: center;
+}
+.divContenedor{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+ /* SERVICIOS */
+
+
+.figureServicios{
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows:50vh 50vh;
+    
+
+}
+
+.h2{
+    font-size: 30px;
+    font-family: 'Tiro Tamil', serif;
+    font-weight: 100;
+   
+    
+}
+
+
+
+
+/* FLEXBOX */
+
+.contenedorSection{
+    display: flex;
+    justify-content: center;  
+    
+   
+}
+
+.contenedorDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap-reverse;
+   
+}

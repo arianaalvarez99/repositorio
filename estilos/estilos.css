@@ -5,16 +5,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap');
 
+
+/* MOBILE-SMART */
 *{
     padding: 0%;
     margin: 0%;
 }
+header{
+    background-color:rgba(44, 102, 102, 0.699);}
+
+
+/* DESKTOP */
+@media (min-width: 1024px){
 
 /* HEADER */
 
 header{
-    background-color:rgba(44, 102, 102, 0.699);
+    
     padding: 30px 25px 10px 30px;
     display: flex;
     justify-content: right;
@@ -37,47 +46,106 @@ a{
 /* INDEX */
 
 .título{
-    font-family: 'Tiro Tamil', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    font-weight: 500;
-    display: flex;
+    display: grid;
     justify-content: center;
+    padding: 10px 0px 30px 0px;
 }
 
 .subtítulo{
-    font-family: 'Tiro Tamil', serif;
-    display: flex;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
     justify-content: center;
+    padding: 30px 0px 50px 0px;
+    font-size: 33px;
+}
+
+body{ background-color:papayawhip; }
+
+.contenedorDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    gap: 0px 20px; 
+  }
+
+.box{
+    border-radius: 20px;
+    width: 205px;
+    height: 205px;
+    padding: 15px 7px 15px 15px;
+   margin-top: 10px;
+}
+
+.box1{
+    background-color: silver;
+    transition-property: all;
+    transition-duration: 2s;
     
 }
 
-body{
-    background-color: mintcream;
-    
-    
-}
-main{
-    padding: 20px 80px 55px 80px;
-}
-section{
-    padding: 0px 80px 55px 80px;
+.box1:hover{
+transform: scale(2);
 }
 
 
 .figure{ 
     
-    display: flex;
+    display: grid;
     justify-content: center;
 
 }
 
+.h2Index{
+    display: grid;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;
+}
+.h3Index{
+    display: grid;
+    justify-content: center;    
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 70px;
+}
 
 footer{
     background-color: darksalmon;
     padding: 30px;
     font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    display: grid;
+
+}
+
+/* BIOGRAFIA */
+
+#mainBio{
+  display: flex;
+  justify-content: left;
+}
+
+.figureBio{
+   
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    
+  }
+
+.texto{
+    
+    font-size: 20px;
+    font-weight: 100px;
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 0px 0px 20px;
     
 }
+
+
+
 
 
 /* CONTACTO */
@@ -90,6 +158,7 @@ footer{
 }
 .form{ 
      font-family: 'Source Sans Pro', sans-serif;
+    
 }
 
 
@@ -114,27 +183,43 @@ footer{
 
 
 
- /* SERVICIOS */
+ /* SERVICIOS */ /*aplique grids*/
 
 
 .figureServicios{
     display: grid;
-    grid-template-columns: 400px 400px 400px 400px;
-    grid-template-rows:50vh 50vh;
-    
-
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    gap: 0px 30px; 
+    grid-template-areas: 
+      "uno dos tres"; 
+      justify-content: space-between;  
+      justify-items: center; 
+     
 }
 
-.h2{
-    font-size: 30px;
-    font-family: 'Tiro Tamil', serif;
+.uno { grid-area: uno;}
+.dos { grid-area: dos;}
+.tres { grid-area: tres;}
+ 
+
+
+.figCaption{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 100;
-   
-    
+}
+
+.dTexto{
+    padding-top: 20px;
+    padding-left: 5px;
 }
 
 
 
+.mainS{
+    padding: 70px 50px 180px 50px;
+}
 
 /* FLEXBOX */
 
@@ -151,4 +236,6 @@ footer{
     width: 70%;
     flex-wrap: wrap-reverse;
    
+}
+
 }

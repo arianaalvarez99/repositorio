@@ -8,13 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap');
 
 
-/* MOBILE-SMART */
+/* MOBILE SMART */
 *{
     padding: 0%;
     margin: 0%;
 }
-header{
-    background-color:rgba(44, 102, 102, 0.699);}
+
 
 
 /* DESKTOP */
@@ -23,7 +22,7 @@ header{
 /* HEADER */
 
 header{
-    
+    background-color:rgba(44, 102, 102, 0.699);
     padding: 30px 25px 10px 30px;
     display: flex;
     justify-content: right;
@@ -171,16 +170,18 @@ footer{
    
 }
 .sectionContenedor{
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 .divContenedor{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    flex-wrap: wrap-reverse;
-}
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 47px 36px; 
+    padding-top: 80px;
+  
 
+}
 
 
  /* SERVICIOS */ /*aplique grids*/

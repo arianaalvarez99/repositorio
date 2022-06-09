@@ -8,17 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap');
 
 
-/* MOBILE SMART */
 *{
     padding: 0%;
     margin: 0%;
 }
-
-
-
-/* DESKTOP */
-@media (min-width: 1024px){
-
 /* HEADER */
 
 header{
@@ -43,7 +36,10 @@ a{
 
 
 /* INDEX */
-
+.contenedorSection{
+    display: grid;
+    justify-content: center;
+}
 .título{
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
@@ -78,14 +74,8 @@ body{ background-color:papayawhip; }
 }
 
 .box1{
-    background-color: silver;
-    transition-property: all;
-    transition-duration: 2s;
-    
-}
+    background-color:gray;
 
-.box1:hover{
-transform: scale(2);
 }
 
 
@@ -116,6 +106,7 @@ footer{
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     display: grid;
+    font-size: 16px;
 
 }
 
@@ -142,10 +133,6 @@ footer{
     padding: 100px 0px 0px 20px;
     
 }
-
-
-
-
 
 /* CONTACTO */
 
@@ -182,7 +169,6 @@ footer{
   
 
 }
-
 
  /* SERVICIOS */ /*aplique grids*/
 
@@ -222,21 +208,223 @@ footer{
     padding: 70px 50px 180px 50px;
 }
 
-/* FLEXBOX */
-
-.contenedorSection{
-    display: flex;
-    justify-content: center;  
+@media(min-width:500px){
+  
+    /* INDEX */
     
-   
+nav ul li{
+padding: 0px 10px 15px 10px;
+justify-items: center;
+}
+a{font-size: 16px;}
+
+.banner{ width: 500px;}
+
+.título{ font-size: 30px;}
+
+.subtítulo{ font-size: 25px;}
+.contenedorDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    gap: 15px 10px; 
 }
 
-.contenedorDiv{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    flex-wrap: wrap-reverse;
+/*BIOGRAFIA  */
+.mainBio{
+    height: 300px;
+}
+.imgBio{
+    width: 250px;
+    justify-items: left;
+    padding-top: 80px;
+}
+.texto{
+    padding-top: 0%;
+    font-size: 16px;  
+}
+.hola{ 
+display: flex;
+padding-top: 10px;
+font-size: 30px;
+}
+
+/* GALERIA */
+
+.galería{
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+   display: grid;
+   justify-items: center;
+   padding-top: 40px;
    
+}
+.sectionContenedor{
+    display: grid;
+    justify-content: center;
+}
+.divContenedor{
+    display: grid; 
+    grid-template-columns: 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr ; 
+    gap: 30px 30px; 
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+}
+
+/* SERVICIOS */
+
+.figureServicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    gap: 30px 30px; 
+    grid-template-areas: 
+      "uno"
+      "dos"
+      "tres"; 
+      justify-content: space-between;  
+      justify-items: center; 
+     
+}
+
+.uno { grid-area: uno;}
+.dos { grid-area: dos;}
+.tres { grid-area: tres;}
+}
+
+@media (min-width:768px){
+
+    /* INDEX */
+
+nav ul li{
+        padding: 0px 25px 15px 10px;
+        justify-items: center;}
+
+a{font-size: 25px;}
+
+.banner{ width: 768px;}
+
+.título{ font-size: 40px;}
+
+.subtítulo{ font-size: 35px;}
+
+.contenedorDiv{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr ;
+gap: 15px 10px; 
+}
+
+/*BIOGRAFIA  */
+.mainBio{
+height: 350px;
+}
+.imgBio{
+width: 300px;
+justify-items: left;
+padding-top: 110px;
+padding-bottom: 110px;
+}
+.texto{
+padding-top:80px;
+font-size: 20px;  
+padding-bottom: 110px;
+}
+.hola{ font-size: 40px;}
+
+/* GALERIA */
+
+.galería{
+font-family:'Source Sans Pro', sans-serif;
+font-size: 40px;
+font-weight: 500;
+display: grid;
+justify-items: center;
+padding-top: 40px;}
+
+.divContenedor{
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr ; 
+grid-template-rows: 1fr 1fr ; 
+}
+
+/* SERVICIOS */
+.imgS{
+    width: 500px;
+}
+.figureServicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px 0px; 
+    grid-template-areas: 
+      "uno" 
+      "dos"
+      "tres"; 
+}
+.figCaption{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+.dTexto{
+    padding-top: 20px;
+
+}
+.uno{ padding: 70px 50px 70px 60px;
+}
+.tres{ padding: 70px 50px 60px 55px;
+}
+.mainS{
+    padding: 70px 50px 180px 80px;
+}
+footer{
+    font-size: 25px;
+}
+}
+
+@media(min-width:1024px){
+
+    header{
+        background-color:rgba(44, 102, 102, 0.699);
+        padding: 30px 25px 10px 30px;
+        display: flex;
+        justify-content: right;}
+
+.banner{ width: auto;}
+.título{ font-size: 40px;}
+.subtítulo{font-size: 33px;}
+
+/* GALERIA */
+.divContenedor{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr ; 
+    }
+ /* SERVICIOS */
+ .figureServicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 5px 15px; 
+    grid-template-areas: 
+      "uno dos tres"; 
+}
+.mainS{
+  padding: 40px 150px 40px 0px;
+}
+.h2{font-size: 26px;}
+.dTexto{font-size: 16px;}
+.imgS{  width: 305px;}
+.uno{
+    padding: 0%;
+    padding-left: 45px;
+}
+.tres{
+    padding: 0%;
 }
 
 }

@@ -9,13 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&family=Unna&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300;400&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&family=Unna&display=swap');
 
-
-
-*{
-    padding: 0%;
-    margin: 0%;
-}
-
+@import "generales";
 
 /* INDEX */
 
@@ -23,15 +17,7 @@
     display: grid;
     
 }
-.logo{
-    display: grid;
-    justify-content: center;
-     background-color: white;
-     margin: 0%;
-     padding-top: 20px;
-     padding-bottom: 20px;
-   
-}
+
 
 .subtitulo{
     font-family: 'Poppins', sans-serif;
@@ -41,8 +27,6 @@
     font-size: 33px;
 }
 
-body{ background-color: #E5E8E8 
-    ; }
 
 .h2Index{
     display: grid;
@@ -58,14 +42,6 @@ body{ background-color: #E5E8E8
     font-family: 'Poppins', sans-serif;
     padding-bottom: 70px;
     font-size: 17px;
-}
-
-footer{
-    justify-content: center;
-    display: grid;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 /* BIOGRAFIA */

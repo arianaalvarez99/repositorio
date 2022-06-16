@@ -1,0 +1,466 @@
+@charset "UTF-8";
+/* TIPOS DE FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Oswald:wght@300&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&family=Unna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300;400&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&family=Unna&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: #E5E8E8;
+}
+
+.logo {
+  display: grid;
+  justify-content: center;
+  background-color: white;
+  margin: 0%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer {
+  justify-content: center;
+  display: grid;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* INDEX */
+.tamaño {
+  display: grid;
+}
+
+.subtitulo {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  justify-content: center;
+  padding: 30px 0px 10px 0px;
+  font-size: 33px;
+}
+
+.h2Index {
+  display: grid;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 50px;
+}
+
+.h3Index {
+  display: grid;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 70px;
+  font-size: 17px;
+}
+
+/* BIOGRAFIA */
+#mainBio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "figureBio texto";
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.figureBio {
+  grid-area: figureBio;
+}
+
+.texto {
+  grid-area: texto;
+  font-size: 20px;
+  font-weight: 100px;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  padding-right: 150px;
+}
+
+/* CONTACTO */
+.contacto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.form {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 30px 40px 122px 40px;
+}
+
+/* GALERIA */
+.galeria {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.sectionContenedor {
+  display: grid;
+  justify-content: center;
+}
+
+.divContenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 47px 36px;
+  padding-top: 80px;
+}
+
+.box {
+  border-radius: 20px;
+  width: 225px;
+  height: 225px;
+  padding: 15px 10px 15px 15px;
+  margin-top: 10px;
+}
+
+.box1 {
+  background-color: gray;
+}
+
+/* SERVICIOS */
+.mainS {
+  display: grid;
+  justify-content: center;
+}
+
+.cuerpoServicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px;
+  grid-template-areas: "card1 card2 card3";
+  font-family: "Poppins", sans-serif;
+}
+
+.card1 {
+  grid-area: card1;
+  background-color: white;
+  border-radius: 20px;
+  height: 600px;
+  width: 200px;
+}
+
+.card2 {
+  grid-area: card2;
+  background-color: white;
+  border-radius: 20px;
+  height: 600px;
+  width: 200px;
+}
+
+.card3 {
+  grid-area: card3;
+  background-color: white;
+  border-radius: 20px;
+  height: 600px;
+  width: 200px;
+}
+
+.card1:hover {
+  transform: translateY(20px);
+  transition: all 1s ease-in;
+}
+
+.card2:hover {
+  transform: translateY(20px);
+  transition: all 1s ease-in;
+}
+
+.card3:hover {
+  transform: translateY(20px);
+  transition: all 1s ease-in;
+}
+
+.h2S {
+  width: 400;
+}
+
+.h4S {
+  width: 300;
+}
+
+@media (min-width: 375px) {
+  /* INDEX */
+  footer {
+    justify-content: center;
+    display: grid;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    margin: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logoI {
+    width: 300px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+  }
+
+  .h2Index {
+    font-size: 19px;
+  }
+
+  .contenedorDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px 10px;
+  }
+
+  /*BIOGRAFIA  */
+  #mainBio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "figureBio" "texto";
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .figureBio {
+    grid-area: figureBio;
+  }
+
+  .texto {
+    grid-area: texto;
+    font-size: 16px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* GALERIA */
+  .galeria {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    display: grid;
+    justify-items: center;
+    padding-top: 40px;
+  }
+
+  .sectionContenedor {
+    display: grid;
+    justify-content: center;
+  }
+
+  .divContenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px 0px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  /* SERVICIOS */
+  .cuerpoServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 5px;
+    grid-template-areas: "card1" "card2" "card3";
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-items: center;
+  }
+
+  .card1 {
+    grid-area: card1;
+    background-color: white;
+  }
+
+  .card2 {
+    grid-area: card2;
+    background-color: white;
+  }
+
+  .card3 {
+    grid-area: card3;
+    background-color: white;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    justify-content: center;
+    display: grid;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* INDEX */
+  .subtitulo {
+    font-size: 35px;
+  }
+
+  .logoI {
+    width: 350px;
+  }
+
+  .contenedorDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 10px;
+  }
+
+  /*BIOGRAFIA  */
+  .mainBio {
+    height: 350px;
+  }
+
+  .imgBio {
+    width: 300px;
+    justify-items: left;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .texto {
+    padding-top: 80px;
+    font-size: 20px;
+    padding-bottom: 110px;
+  }
+
+  .hola {
+    font-size: 40px;
+  }
+
+  /* GALERIA */
+  .galeria {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    display: grid;
+    justify-items: center;
+    padding-top: 40px;
+  }
+
+  .divContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+  }
+
+  /* SERVICIOS */
+  .cuerpoServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px 5px;
+    grid-template-areas: "card1" "card2" "card3";
+    justify-items: center;
+  }
+
+  .card1 {
+    grid-area: card1;
+    background-color: white;
+  }
+
+  .card2 {
+    grid-area: card2;
+    background-color: white;
+  }
+
+  .card3 {
+    grid-area: card3;
+    background-color: white;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    justify-content: center;
+    display: grid;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .subtitulo {
+    font-size: 33px;
+  }
+
+  /* BIOGRAFÍA */
+  #mainBio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "figureBio texto";
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .figureBio {
+    grid-area: figureBio;
+  }
+
+  .texto {
+    grid-area: texto;
+    font-size: 20px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    padding-right: 150px;
+  }
+
+  /* GALERIA */
+  .divContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  /* SERVICIOS */
+  .cuerpoServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 5px;
+    grid-template-areas: "card1 card2 card3";
+    padding: 30px 20px 30px 20px;
+  }
+
+  .card1 {
+    grid-area: card1;
+    background-color: white;
+  }
+
+  .card2 {
+    grid-area: card2;
+    background-color: white;
+  }
+
+  .card3 {
+    grid-area: card3;
+    background-color: white;
+  }
+}/*# sourceMappingURL=style.css.map */

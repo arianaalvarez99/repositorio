@@ -1,0 +1,29 @@
+.texto{
+    display: grid;
+    padding-right: 150px;
+     grid-area: texto; 
+     font: {
+        size: 20px;
+        weight: 100px;
+        family: 'Poppins', sans-serif;
+     }
+  
+}  
+
+#mainBio{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+    grid-template-areas: 
+      "figureBio texto";
+      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
+     
+  }
+  
+  .figureBio{
+     grid-area: figureBio;
+   
+  }
+  

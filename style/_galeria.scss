@@ -1,0 +1,21 @@
+.galeria{
+    font: {
+        family: 'Poppins', sans-serif;
+        size: 30px;
+        weight: 500px;
+    }
+}
+
+.sectionGaleria{
+    display: grid;
+    justify-content: center;
+
+    .divContenedor{
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 47px 36px; 
+    padding-top: 80px;
+    }
+
+}
+

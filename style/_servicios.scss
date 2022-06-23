@@ -1,0 +1,61 @@
+.mainS{
+    display: grid;
+    justify-content: center;
+
+}
+
+.cuerpoServicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px; 
+    grid-template-areas: 
+    "card1 card2 card3"; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.card1{ grid-area: card1;
+background-color: white;
+border-radius: 20px;
+height: 600px;
+width: 200px;
+
+    &:hover {
+    transform: translateY(20px);
+    transition:all 1s ease-in;
+
+    }
+}
+
+.card2{ grid-area: card2;
+    background-color: white;
+    border-radius: 20px;
+    height: 600px;
+    width: 200px;
+
+    &:hover {
+        transform: translateY(20px);
+        transition:all 1s ease-in;
+    }
+}
+
+.card3{ grid-area: card3;
+    background-color: white;
+    border-radius: 20px;
+    height: 600px;
+    width: 200px;
+
+    &:hover{
+        transform: translateY(20px);
+        transition:all 1s ease-in;
+    }
+}
+
+
+.h2S{
+    width: 400;
+
+}
+.h4S{
+    width: 300;
+}

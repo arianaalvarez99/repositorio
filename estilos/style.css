@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* TIPOS DE FUENTES */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200&display=swap");
@@ -35,6 +34,33 @@ footer {
   padding-bottom: 20px;
 }
 
+@media (min-width: 375px) {
+  footer {
+    justify-content: center;
+    display: grid;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    justify-content: center;
+    display: grid;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    justify-content: center;
+    display: grid;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 .galeria {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -52,6 +78,49 @@ footer {
   padding-top: 80px;
 }
 
+@media (min-width: 375px) {
+  .galeria {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    display: grid;
+    justify-items: center;
+    padding-top: 40px;
+  }
+
+  .sectionGaleria {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px 0px;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .galeria {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    display: grid;
+    justify-items: center;
+    padding-top: 40px;
+  }
+
+  .divContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .divContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 .texto {
   display: grid;
   padding-right: 150px;
@@ -75,6 +144,74 @@ footer {
   grid-area: figureBio;
 }
 
+@media (min-width: 375px) {
+  #mainBio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "figureBio" "texto";
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .figureBio {
+    grid-area: figureBio;
+  }
+
+  .texto {
+    grid-area: texto;
+    font-size: 16px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media (min-width: 768px) {
+  .mainBio {
+    height: 350px;
+  }
+
+  .imgBio {
+    width: 300px;
+    justify-items: left;
+    padding-top: 110px;
+    padding-bottom: 80px;
+  }
+
+  .texto {
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 110px;
+  }
+
+  .hola {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  #mainBio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "figureBio texto";
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .figureBio {
+    grid-area: figureBio;
+  }
+
+  .texto {
+    grid-area: texto;
+    font-size: 20px;
+    font-weight: 100px;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    padding-right: 150px;
+  }
+}
 .form {
   font-family: "Poppins", sans-serif;
   margin: 0px;
@@ -86,12 +223,15 @@ footer {
   justify-content: center;
 }
 
-h1 {
+.h1S {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .pServ {
@@ -158,115 +298,7 @@ h1 {
   width: 300;
 }
 
-.subtitulo {
-  font-family: "Poppins", sans-serif;
-  display: grid;
-  justify-content: center;
-  padding: 30px 0px 10px 0px;
-  font-size: 33px;
-}
-
-.h2Index {
-  display: grid;
-  justify-content: center;
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
-  padding-top: 50px;
-}
-
-.h3Index {
-  display: grid;
-  justify-content: center;
-  font-family: "Poppins", sans-serif;
-  padding-bottom: 70px;
-  font-size: 17px;
-}
-
 @media (min-width: 375px) {
-  /* INDEX */
-  footer {
-    justify-content: center;
-    display: grid;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .logo {
-    display: grid;
-    justify-content: center;
-    background-color: white;
-    margin: 0%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .logoI {
-    width: 300px;
-  }
-
-  .subtitulo {
-    font-size: 20px;
-  }
-
-  .h2Index {
-    font-size: 19px;
-  }
-
-  .contenedorDiv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px 10px;
-  }
-
-  /*BIOGRAFIA  */
-  #mainBio {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "figureBio" "texto";
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .figureBio {
-    grid-area: figureBio;
-  }
-
-  .texto {
-    grid-area: texto;
-    font-size: 16px;
-    font-weight: 100px;
-    font-family: "Poppins", sans-serif;
-  }
-
-  /* GALERIA */
-  .galeria {
-    font-family: "Poppins", sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    display: grid;
-    justify-items: center;
-    padding-top: 40px;
-  }
-
-  .sectionContenedor {
-    display: grid;
-    justify-content: center;
-  }
-
-  .divContenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 30px 0px;
-    padding-top: 70px;
-    padding-bottom: 50px;
-  }
-
-  /* SERVICIOS */
   .cuerpoServicios {
     display: grid;
     grid-template-columns: 1fr;
@@ -294,70 +326,6 @@ h1 {
   }
 }
 @media (min-width: 768px) {
-  footer {
-    justify-content: center;
-    display: grid;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  /* INDEX */
-  .subtitulo {
-    font-size: 35px;
-  }
-
-  .logoI {
-    width: 350px;
-  }
-
-  .contenedorDiv {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 15px 10px;
-  }
-
-  /*BIOGRAFIA  */
-  .mainBio {
-    height: 350px;
-  }
-
-  .imgBio {
-    width: 300px;
-    justify-items: left;
-    padding-top: 110px;
-    padding-bottom: 110px;
-  }
-
-  .texto {
-    padding-top: 80px;
-    font-size: 20px;
-    padding-bottom: 110px;
-  }
-
-  .hola {
-    font-size: 40px;
-  }
-
-  /* GALERIA */
-  .galeria {
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    display: grid;
-    justify-items: center;
-    padding-top: 40px;
-  }
-
-  .divContenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px 30px;
-  }
-
-  /* SERVICIOS */
   .cuerpoServicios {
     display: grid;
     grid-template-columns: 1fr;
@@ -383,50 +351,6 @@ h1 {
   }
 }
 @media (min-width: 1024px) {
-  footer {
-    justify-content: center;
-    display: grid;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .subtitulo {
-    font-size: 33px;
-  }
-
-  /* BIOGRAFÍA */
-  #mainBio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "figureBio texto";
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .figureBio {
-    grid-area: figureBio;
-  }
-
-  .texto {
-    grid-area: texto;
-    font-size: 20px;
-    font-weight: 100px;
-    font-family: "Poppins", sans-serif;
-    display: grid;
-    padding-right: 150px;
-  }
-
-  /* GALERIA */
-  .divContenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  /* SERVICIOS */
   .cuerpoServicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -449,5 +373,79 @@ h1 {
   .card3 {
     grid-area: card3;
     background-color: white;
+  }
+}
+.subtitulo {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  justify-content: center;
+  padding: 30px 0px 10px 0px;
+  font-size: 33px;
+}
+
+.h2Index {
+  display: grid;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 50px;
+}
+
+.h3Index {
+  display: grid;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 70px;
+  font-size: 17px;
+}
+
+@media (min-width: 375px) {
+  .logo {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    margin: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logoI {
+    width: 300px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+  }
+
+  .h2Index {
+    font-size: 19px;
+  }
+
+  .contenedorDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .subtitulo {
+    font-size: 35px;
+  }
+
+  .logoI {
+    width: 350px;
+  }
+
+  .contenedorDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .subtitulo {
+    font-size: 33px;
   }
 }/*# sourceMappingURL=style.css.map */

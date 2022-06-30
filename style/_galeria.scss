@@ -19,3 +19,53 @@
 
 }
 
+@media(min-width:375px){
+  
+    .galeria{
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+       display: grid;
+       justify-items: center;
+       padding-top: 40px;
+       
+    }
+ 
+    .sectionGaleria{
+        display: grid; 
+        justify-items: center;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 50px 0px; 
+        padding-bottom: 50px;
+        
+       }
+
+
+}
+@media (min-width:768px){
+   
+    .galeria{
+        font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    display: grid;
+    justify-items: center;
+    padding-top: 40px;}
+    
+    .divContenedor{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr ; 
+    gap: 30px 30px;
+    }
+    
+}
+@media(min-width:1024px){
+
+    .divContenedor{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr ; 
+        }
+}

@@ -22,3 +22,43 @@
     padding-bottom: 70px;
     font-size: 17px;
 }
+
+@media(min-width:375px){
+
+    
+    .logo{
+        display: grid;
+        justify-content: center;
+         background-color: white;
+         margin: 0%;
+         padding-top: 20px;
+         padding-bottom: 20px;
+    }
+    .logoI{
+        width: 300px;
+    }
+    .subtitulo{ font-size: 20px;}
+    
+    .h2Index{font-size: 19px;}
+    .contenedorDiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px 10px; 
+    }
+}
+@media (min-width:768px){
+   
+    .subtitulo{ font-size: 35px;}
+    .logoI{ width: 350px;}
+    .contenedorDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 15px 10px; 
+    }
+}
+@media(min-width:1024px){
+
+    .subtitulo{font-size: 33px;}
+}

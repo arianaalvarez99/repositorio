@@ -3,14 +3,17 @@
     justify-content: center;
 
 }
-h1{ 
+.h1S{ 
     display: flex;
     justify-content: center;
-    padding-top: 20px;
     font: {
     family:'Poppins', sans-serif;
     size: 20px;
           }
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .pServ{
@@ -79,4 +82,77 @@ width: 200px;
 }
 .h4S{
     width: 300;
+}
+
+
+
+@media(min-width:375px){
+ 
+    
+    .cuerpoServicios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        gap: 20px 5px; 
+        grid-template-areas: 
+          "card1"
+          "card2"
+          "card3"; 
+         padding-top: 30px;
+         padding-bottom: 30px;
+         justify-items: center;
+         
+    }
+    
+    .card1{ grid-area: card1;
+    background-color: white;}
+    .card2{ grid-area: card2;
+    background-color: white;}
+    .card3{ grid-area: card3;
+    background-color: white;}
+    
+}     
+@media (min-width:768px){
+ 
+    .cuerpoServicios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        gap: 30px 5px; 
+        grid-template-areas: 
+          "card1"
+          "card2"
+          "card3"; 
+         justify-items: center;
+    }
+    
+    .card1{ grid-area: card1;
+    background-color: white;}
+    .card2{ grid-area: card2;
+    background-color: white;}
+    .card3{ grid-area: card3;
+    background-color: white;}
+     
+}
+@media(min-width:1024px){
+
+        .cuerpoServicios{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 1fr ;
+           gap: 0px 5px; 
+           grid-template-areas: 
+             "card1 card2 card3"; 
+            padding: 30px 20px 30px 20px;
+            
+       }
+       
+       .card1{ grid-area: card1;
+       background-color: white;}
+       .card2{ grid-area: card2;
+       background-color: white;}
+       .card3{ grid-area: card3;
+       background-color: white;}
+        
+       
 }

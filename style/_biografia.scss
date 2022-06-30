@@ -27,3 +27,73 @@
    
   }
   
+  
+@media(min-width:375px){
+  
+   #mainBio{
+       display: grid;
+       grid-template-columns: 1fr ;
+       grid-template-rows: 1fr;
+        grid-template-areas: 
+          "figureBio"
+           "texto";
+          justify-content: space-between;
+          align-items: center;
+          justify-items: center;
+         
+      }
+      .figureBio{ grid-area: figureBio;}
+      .texto{
+         grid-area: texto; 
+          font-size: 16px;
+          font-weight: 100px;
+          font-family: 'Poppins', sans-serif;
+        }
+}
+ @media (min-width:768px){
+   
+         .mainBio{
+         height: 350px;
+         }
+         .imgBio{
+         width: 300px;
+         justify-items: left;
+         padding-top: 110px;
+         padding-bottom: 80px;
+         }
+         .texto{
+         padding-top:10px;
+         font-size: 20px;  
+         padding-bottom: 110px;
+     
+         }
+
+         .hola{ font-size: 40px;}
+}
+@media(min-width:1024px){
+
+   #mainBio{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr;
+        grid-template-areas: 
+          "figureBio texto";
+          justify-content: space-between;
+          align-items: center;
+          justify-items: center;
+         
+      }
+      
+      .figureBio{
+         grid-area: figureBio;
+       
+      }
+      .texto{
+         grid-area: texto; 
+          font-size: 20px;
+          font-weight: 100px;
+          font-family: 'Poppins', sans-serif;
+          display: grid;
+      padding-right: 150px;
+      }
+}

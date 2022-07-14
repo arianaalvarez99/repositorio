@@ -38,7 +38,7 @@ footer {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 30px;
   grid-template-areas: "instagram whatsapp email";
@@ -56,6 +56,13 @@ footer {
 
 .email {
   grid-area: email;
+}
+
+.sectionFooter a {
+  transition: all 1s ease-in-out;
+}
+.sectionFooter a:hover {
+  transform: scale(1.2);
 }
 
 @media (min-width: 375px) {
@@ -186,7 +193,7 @@ footer {
 .pServ {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  margin-top: 50px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   background-color: white;
@@ -207,8 +214,8 @@ footer {
   grid-area: card1;
   background-color: white;
   border-radius: 20px;
-  height: 800px;
   width: 200px;
+  height: 700px;
 }
 .card1:hover {
   transform: translateY(20px);
@@ -318,17 +325,17 @@ footer {
   .card1 {
     grid-area: card1;
     background-color: white;
-    height: 520px;
+    height: 570px;
   }
   .card2 {
     grid-area: card2;
     background-color: white;
-    height: 520px;
+    height: 570px;
   }
   .card3 {
     grid-area: card3;
     background-color: white;
-    height: 520px;
+    height: 570px;
   }
 }
 .subtitulo {

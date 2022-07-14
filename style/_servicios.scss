@@ -19,8 +19,7 @@
 .pServ{
     display: flex;
     justify-content: center;
-    padding-top: 40px;
-    
+    margin-top: 50px;
     font: {
     family:'Poppins', sans-serif;
     size: 20px;
@@ -42,8 +41,9 @@
 .card1{ grid-area: card1;
 background-color: white;
 border-radius: 20px;
-height: 800px;
 width: 200px;
+height: 700px;
+
 
     &:hover {
     transform: translateY(20px);
@@ -162,13 +162,13 @@ width: 200px;
        
        .card1{ grid-area: card1;
        background-color: white;
-       height: 520px;}
+       height: 570px;}
        .card2{ grid-area: card2;
        background-color: white;
-       height: 520px;}
+       height: 570px;}
        .card3{ grid-area: card3;
        background-color: white;
-       height: 520px;}
+       height: 570px;}
         
        
 }

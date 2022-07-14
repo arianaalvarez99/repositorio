@@ -1,71 +1,35 @@
-.galeria{
-    font: {
-        family: 'Poppins', sans-serif;
-        size: 30px;
-        weight: 500px;
-    }
-}
 
-.sectionGaleria{
+.containerG{
     display: grid;
     justify-content: center;
-
-    .divContenedor{
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    gap: 47px 36px; 
-    padding-top: 80px;
-    }
-
+    gap: 50px;
+    padding-right: 60px;
 }
 
 @media(min-width:375px){
   
-    .galeria{
-        font-family: 'Poppins', sans-serif;
-        font-size: 30px;
-        font-weight: 500;
-       display: grid;
-       justify-items: center;
-       padding-top: 40px;
-       
+    
+    .containerG{
+        margin-left: 100px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
- 
-    .sectionGaleria{
-        display: grid; 
-        justify-items: center;
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 50px 0px; 
-        padding-bottom: 50px;
-        
-       }
-
-
+.col{  
+   
+    padding: 5px 5px 5px 5px;
+  
+}
+    
 }
 @media (min-width:768px){
-   
-    .galeria{
-        font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    display: grid;
-    justify-items: center;
-    padding-top: 40px;}
-    
-    .divContenedor{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr ; 
-    gap: 30px 30px;
-    }
-    
+   .containerG{
+    margin: 30px 30px 30px 30px;
+   }
 }
+
 @media(min-width:1024px){
 
-    .divContenedor{
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr 1fr ; 
-        grid-template-rows: 1fr 1fr ; 
-        }
 }

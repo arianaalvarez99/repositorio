@@ -23,6 +23,21 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.sectionFooter{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px; 
+  grid-template-areas: 
+    "instagram whatsapp email"; 
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.instagram{ grid-area: instagram;}
+.whatsapp{ grid-area: whatsapp;}
+.email{ grid-area: email;}
 
 @media(min-width:375px){
     footer{

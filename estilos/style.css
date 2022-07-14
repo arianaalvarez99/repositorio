@@ -34,182 +34,131 @@ footer {
   padding-bottom: 20px;
 }
 
-@media (min-width: 375px) {
-  footer {
-    justify-content: center;
-    display: grid;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media (min-width: 768px) {
-  footer {
-    justify-content: center;
-    display: grid;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  footer {
-    justify-content: center;
-    display: grid;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-.galeria {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  font-weight: 500px;
-}
-
-.sectionGaleria {
+.sectionFooter {
   display: grid;
   justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px;
+  grid-template-areas: "instagram whatsapp email";
+  padding-top: 30px;
+  padding-left: 30px;
 }
-.sectionGaleria .divContenedor {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 47px 36px;
-  padding-top: 80px;
+
+.instagram {
+  grid-area: instagram;
+}
+
+.whatsapp {
+  grid-area: whatsapp;
+}
+
+.email {
+  grid-area: email;
 }
 
 @media (min-width: 375px) {
-  .galeria {
-    font-family: "Poppins", sans-serif;
-    font-size: 30px;
-    font-weight: 500;
+  footer {
+    justify-content: center;
     display: grid;
-    justify-items: center;
-    padding-top: 40px;
-  }
-
-  .sectionGaleria {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 50px 0px;
-    padding-bottom: 50px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media (min-width: 768px) {
-  .galeria {
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
-    font-weight: 500;
+  footer {
+    justify-content: center;
     display: grid;
-    justify-items: center;
-    padding-top: 40px;
-  }
-
-  .divContenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px 30px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media (min-width: 1024px) {
-  .divContenedor {
+  footer {
+    justify-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
-.texto {
+.containerG {
   display: grid;
-  padding-right: 150px;
-  grid-area: texto;
-  font-size: 20px;
-  font-weight: 100px;
+  justify-content: center;
+  gap: 50px;
+  padding-right: 60px;
+}
+
+@media (min-width: 375px) {
+  .containerG {
+    margin-left: 100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .col {
+    padding: 5px 5px 5px 5px;
+  }
+}
+@media (min-width: 768px) {
+  .containerG {
+    margin: 30px 30px 30px 30px;
+  }
+}
+.col2 {
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
 
-#mainBio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "figureBio texto";
-  justify-content: space-between;
-  align-items: center;
-  justify-items: center;
-}
-
-.figureBio {
-  grid-area: figureBio;
+#hola {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
 }
 
 @media (min-width: 375px) {
-  #mainBio {
+  .col1 {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "figureBio" "texto";
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
+    justify-content: center;
   }
-
-  .figureBio {
-    grid-area: figureBio;
+  #hola {
+    display: grid;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
-
-  .texto {
-    grid-area: texto;
-    font-size: 16px;
-    font-weight: 100px;
-    font-family: "Poppins", sans-serif;
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 768px) {
-  .mainBio {
-    height: 350px;
-  }
-
-  .imgBio {
-    width: 300px;
-    justify-items: left;
-    padding-top: 110px;
-    padding-bottom: 80px;
-  }
-
-  .texto {
+  #hola {
     padding-top: 10px;
-    font-size: 20px;
-    padding-bottom: 110px;
+    padding-bottom: 10px;
   }
-
-  .hola {
-    font-size: 40px;
+  .col2 {
+    font-size: 20px;
+  }
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 1024px) {
-  #mainBio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "figureBio texto";
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
+  .col2 {
+    font-size: 25px;
   }
-
-  .figureBio {
-    grid-area: figureBio;
-  }
-
-  .texto {
-    grid-area: texto;
-    font-size: 20px;
-    font-weight: 100px;
-    font-family: "Poppins", sans-serif;
-    display: grid;
-    padding-right: 150px;
+  #hola {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 .form {
@@ -237,7 +186,7 @@ footer {
 .pServ {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 40px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   background-color: white;
@@ -249,7 +198,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 30px;
+  gap: 10px 30px;
   grid-template-areas: "card1 card2 card3";
   font-family: "Poppins", sans-serif;
 }
@@ -258,7 +207,7 @@ footer {
   grid-area: card1;
   background-color: white;
   border-radius: 20px;
-  height: 600px;
+  height: 800px;
   width: 200px;
 }
 .card1:hover {
@@ -299,30 +248,37 @@ footer {
 }
 
 @media (min-width: 375px) {
+  .h1S {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .pServ {
+    margin-bottom: 50px;
+  }
   .cuerpoServicios {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 20px 5px;
+    gap: 30px 10px;
     grid-template-areas: "card1" "card2" "card3";
     padding-top: 30px;
     padding-bottom: 30px;
     justify-items: center;
   }
-
   .card1 {
     grid-area: card1;
     background-color: white;
+    height: 500px;
   }
-
   .card2 {
     grid-area: card2;
     background-color: white;
+    height: 450px;
   }
-
   .card3 {
     grid-area: card3;
     background-color: white;
+    height: 450px;
   }
 }
 @media (min-width: 768px) {
@@ -334,20 +290,20 @@ footer {
     grid-template-areas: "card1" "card2" "card3";
     justify-items: center;
   }
-
   .card1 {
     grid-area: card1;
     background-color: white;
+    height: 530px;
   }
-
   .card2 {
     grid-area: card2;
     background-color: white;
+    height: 500px;
   }
-
   .card3 {
     grid-area: card3;
     background-color: white;
+    height: 500px;
   }
 }
 @media (min-width: 1024px) {
@@ -359,20 +315,20 @@ footer {
     grid-template-areas: "card1 card2 card3";
     padding: 30px 20px 30px 20px;
   }
-
   .card1 {
     grid-area: card1;
     background-color: white;
+    height: 520px;
   }
-
   .card2 {
     grid-area: card2;
     background-color: white;
+    height: 520px;
   }
-
   .card3 {
     grid-area: card3;
     background-color: white;
+    height: 520px;
   }
 }
 .subtitulo {
@@ -408,19 +364,15 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
   .logoI {
     width: 300px;
   }
-
   .subtitulo {
     font-size: 20px;
   }
-
   .h2Index {
     font-size: 19px;
   }
-
   .contenedorDiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -432,11 +384,9 @@ footer {
   .subtitulo {
     font-size: 35px;
   }
-
   .logoI {
     width: 350px;
   }
-
   .contenedorDiv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

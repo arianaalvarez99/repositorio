@@ -19,7 +19,8 @@
 .pServ{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 40px;
+    
     font: {
     family:'Poppins', sans-serif;
     size: 20px;
@@ -32,7 +33,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 30px; 
+    gap: 10px 30px; 
     grid-template-areas: 
     "card1 card2 card3"; 
     font-family: 'Poppins', sans-serif;
@@ -41,7 +42,7 @@
 .card1{ grid-area: card1;
 background-color: white;
 border-radius: 20px;
-height: 600px;
+height: 800px;
 width: 200px;
 
     &:hover {
@@ -88,12 +89,18 @@ width: 200px;
 
 @media(min-width:375px){
  
-    
+    .h1S{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .pServ{
+        margin-bottom: 50px;
+    }
     .cuerpoServicios{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr ;
-        gap: 20px 5px; 
+        gap: 30px 10px; 
         grid-template-areas: 
           "card1"
           "card2"
@@ -105,11 +112,14 @@ width: 200px;
     }
     
     .card1{ grid-area: card1;
-    background-color: white;}
+    background-color: white;
+    height: 500px;}
     .card2{ grid-area: card2;
-    background-color: white;}
+    background-color: white;
+    height: 450px;}
     .card3{ grid-area: card3;
-    background-color: white;}
+    background-color: white;
+    height: 450px;}
     
 }     
 @media (min-width:768px){
@@ -127,11 +137,14 @@ width: 200px;
     }
     
     .card1{ grid-area: card1;
-    background-color: white;}
+    background-color: white;
+    height: 530px;}
     .card2{ grid-area: card2;
-    background-color: white;}
+    background-color: white;
+    height: 500px;}
     .card3{ grid-area: card3;
-    background-color: white;}
+    background-color: white;
+    height: 500px;}
      
 }
 @media(min-width:1024px){
@@ -148,11 +161,14 @@ width: 200px;
        }
        
        .card1{ grid-area: card1;
-       background-color: white;}
+       background-color: white;
+       height: 520px;}
        .card2{ grid-area: card2;
-       background-color: white;}
+       background-color: white;
+       height: 520px;}
        .card3{ grid-area: card3;
-       background-color: white;}
+       background-color: white;
+       height: 520px;}
         
        
 }

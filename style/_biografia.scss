@@ -1,99 +1,60 @@
-.texto{
-    display: grid;
-    padding-right: 150px;
-     grid-area: texto; 
-     font: {
-        size: 20px;
-        weight: 100px;
-        family: 'Poppins', sans-serif;
-     }
-  
-}  
-
-#mainBio{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr;
-    grid-template-areas: 
-      "figureBio texto";
-      justify-content: space-between;
-      align-items: center;
-      justify-items: center;
-     
-  }
-  
-  .figureBio{
-     grid-area: figureBio;
+ .col2{
+  font: {
+      size: 16px;
+      family: 'Poppins', sans-serif;
+   }  
+}
+#hola{
+   font: {
+   size: 20px;
+   family:'Poppins', sans-serif;
+   }
+   justify-content: center;
+}
    
-  }
-  
-  
 @media(min-width:375px){
+.col1{
+   display: grid;
+   justify-content: center;
   
-   #mainBio{
-       display: grid;
-       grid-template-columns: 1fr ;
-       grid-template-rows: 1fr;
-        grid-template-areas: 
-          "figureBio"
-           "texto";
-          justify-content: space-between;
-          align-items: center;
-          justify-items: center;
-         
-      }
-      .figureBio{ grid-area: figureBio;}
-      .texto{
-         grid-area: texto; 
-          font-size: 16px;
-          font-weight: 100px;
-          font-family: 'Poppins', sans-serif;
-        }
+}
+#hola{
+   display: grid;
+   justify-content: center;
+   font-size: 30px;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+.container{
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
 }
  @media (min-width:768px){
    
-         .mainBio{
-         height: 350px;
-         }
-         .imgBio{
-         width: 300px;
-         justify-items: left;
-         padding-top: 110px;
-         padding-bottom: 80px;
-         }
-         .texto{
-         padding-top:10px;
-         font-size: 20px;  
-         padding-bottom: 110px;
-     
-         }
-
-         .hola{ font-size: 40px;}
+#hola{
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
+.col2{
+font-size: 20px;
+}
+.container{
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+      
+}
+
 @media(min-width:1024px){
 
-   #mainBio{
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       grid-template-rows: 1fr;
-        grid-template-areas: 
-          "figureBio texto";
-          justify-content: space-between;
-          align-items: center;
-          justify-items: center;
-         
+   .col2{
+      font-size: 25px;
       }
-      
-      .figureBio{
-         grid-area: figureBio;
-       
-      }
-      .texto{
-         grid-area: texto; 
-          font-size: 20px;
-          font-weight: 100px;
-          font-family: 'Poppins', sans-serif;
-          display: grid;
-      padding-right: 150px;
-      }
+   #hola{
+   font-size: 40px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   }
+  
 }
